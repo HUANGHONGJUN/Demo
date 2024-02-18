@@ -20,6 +20,7 @@ const hello = ref<string>('world'); // 字符串类型
 const any = ref<any>(2); // 任意类型
 const tsArr = ref<Array<number>>([1,2,3]); // 数组类型  ref<nuber[]>([1,2,3])
 const tsArrString = ref<Array<string>>(['1' ,'2', '3']); // 数组类型但字符串
+const tesArrObj = ref<Array<object>>([{name:'张三',age:18},{name:'李四',age:20}]); // 数组类型但对象
 const tsObj = ref<object>({name:'张三',age:18}); // 对象类型
 const tsFun = ref<Function>(()=>{console.log('hello')}); // 函数类型
 const tsVoid = ():void => { // void类型 用于标识方法返回值的类型，表示该方法没有返回值。
@@ -45,6 +46,7 @@ const isDoen1:boolean = false;
 const hell:string = 'world';
 const any1:any = 2;
 const tsArr1:Array<number> = [1,2,3]; // 或者 tsArr1:number[] = [1,2,3];
+const tsArrObj:Array<object> = [{name:'张三',age:18},{name:'李四',age:20}];
 const tsArrString1:Array<string> = ['1' ,'2', '3'];
 const tsObj1:object = {name:'张三',age:18};
 const tsFun1:Function = () =>{console.log('hello')};

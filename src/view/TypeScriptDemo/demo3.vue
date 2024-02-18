@@ -38,7 +38,7 @@ const cityType: Array<{ label: string; value: number }> = [
     {label: '二线城市', value: 2},
 ];
 let isShow = ref(false);
-const unfold = ref(false    )
+const unfold = ref(false);
 const actiontypeValue = ref<string>(''); // 右侧选择
 const actionValue = ref(''); // 高亮显示
 const cityValue = ref('');
