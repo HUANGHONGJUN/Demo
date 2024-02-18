@@ -6,6 +6,7 @@ import 'element-plus/dist/index.css'
 // import definedirective from './directive/lazydirective'
 
 import directives from './directive/scrollload.js'
+import throttlefun from './directive/throttle.ts'
 import { createPinia } from 'pinia'
 
 import watchlocalStorage from '../src/utils/watchlocalStorage.js'
@@ -23,5 +24,6 @@ app.use(ElementPlus)
 app.use(createPinia())
 app.use(watchlocalStorage)
 app.use(directives)
+app.use(throttlefun)
 // app.use(definedirective)
 app.mount('#app')
